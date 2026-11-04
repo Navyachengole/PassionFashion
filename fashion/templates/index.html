@@ -1,0 +1,440 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An independent fashion and creative design studio exploring contemporary couture, craftsmanship and artistic expression.">
+    <title>ÉLAN — Fashion & Creative Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header class="navbar">
+    <a href="#home" class="logo">ÉLAN<span>.</span></a>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">Studio</a>
+        <a href="#collections">Collections</a>
+        <a href="#process">Process</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+    </nav>
+
+    <a href="#contact" class="nav-contact">LET'S TALK ↗</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i data-lucide="menu"></i>
+    </button>
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-image"></div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content reveal">
+        <p class="eyebrow">INDEPENDENT FASHION & DESIGN STUDIO — 2026</p>
+
+        <h1>
+            FASHION IS<br>
+            AN EXPRESSION<br>
+            <span>OF YOU.</span>
+        </h1>
+
+        <p class="hero-description">
+            Where creativity meets craftsmanship.
+            Discover a new perspective on contemporary fashion.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#collections" class="btn btn-light">EXPLORE COLLECTION ↗</a>
+            <a href="#about" class="btn btn-outline">DISCOVER OUR STUDIO</a>
+        </div>
+    </div>
+
+    <div class="hero-bottom">
+        <span>CRAFTED WITH INTENTION.</span>
+        <span>HYDERABAD · WORKING WORLDWIDE</span>
+        <span>SCROLL TO EXPLORE ↓</span>
+    </div>
+
+</section>
+
+
+<!-- INTRODUCTION -->
+<section class="intro section-padding reveal">
+    <p class="eyebrow">01 / THE STUDIO</p>
+
+    <h2>
+        WE DON'T JUST CREATE<br>
+        CLOTHES. WE CREATE<br>
+        <span>IDENTITIES.</span>
+    </h2>
+
+    <div class="intro-bottom">
+        <p>
+            Fashion is more than what you wear.
+            It is how you see the world, how you express
+            yourself, and how you leave your mark.
+        </p>
+
+        <a href="#about" class="text-link">OUR PHILOSOPHY ↗</a>
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="about section-padding" id="about">
+
+    <div class="about-image reveal">
+        <img
+            src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?w=1000"
+            alt="Fashion designer working on a contemporary garment"
+            loading="lazy"
+        >
+        <span class="image-caption">THE ART OF MAKING</span>
+    </div>
+
+    <div class="about-content reveal">
+        <p class="eyebrow">02 / WHO WE ARE</p>
+
+        <h2>BEYOND<br>FASHION.<br><span>INTO ART.</span></h2>
+
+        <p>
+            ÉLAN is an independent creative fashion studio
+            exploring the intersection of design, culture,
+            individuality and craftsmanship.
+        </p>
+
+        <p>
+            We believe that every silhouette tells a story.
+            Every fabric holds an emotion. Every detail
+            deserves intention.
+        </p>
+
+        <a href="#process" class="text-link">EXPLORE OUR APPROACH ↗</a>
+    </div>
+
+</section>
+
+
+<!-- COLLECTIONS -->
+<section class="collections section-padding" id="collections">
+
+    <div class="section-heading reveal">
+        <div>
+            <p class="eyebrow">03 / SELECTED WORK</p>
+            <h2>THE COLLECTIONS<span>.</span></h2>
+        </div>
+
+        <p>Ideas transformed into wearable art.</p>
+    </div>
+
+    <div class="collection-grid">
+
+        <article class="collection-card tall reveal">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=900"
+                 alt="Contemporary couture editorial fashion" loading="lazy">
+            <div class="collection-info">
+                <span>01 / COUTURE</span>
+                <h3>Contemporary<br>Couture</h3>
+                <p>Elegance beyond convention.</p>
+            </div>
+        </article>
+
+        <article class="collection-card reveal">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=900"
+                 alt="Modern streetwear fashion editorial" loading="lazy">
+            <div class="collection-info">
+                <span>02 / CULTURE</span>
+                <h3>Urban<br>Expression</h3>
+                <p>Style without boundaries.</p>
+            </div>
+        </article>
+
+        <article class="collection-card reveal">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900"
+                 alt="Minimalist contemporary fashion styling" loading="lazy">
+            <div class="collection-info">
+                <span>03 / MINIMAL</span>
+                <h3>Less,<br>But Better.</h3>
+                <p>Beauty in simplicity.</p>
+            </div>
+        </article>
+
+        <article class="collection-card tall reveal">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=900"
+                 alt="Avant-garde inspired fashion portrait" loading="lazy">
+            <div class="collection-info">
+                <span>04 / EXPERIMENTAL</span>
+                <h3>Avant-<br>Garde</h3>
+                <p>Breaking the ordinary.</p>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- CAMPAIGN BANNER -->
+<section class="campaign reveal">
+    <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=1800"
+         alt="Fashion campaign featuring contemporary designer clothing"
+         loading="lazy">
+
+    <div class="campaign-text">
+        <p>THE ART OF INDIVIDUALITY</p>
+        <h2>BE YOUR<br>OWN MUSE.</h2>
+        <a href="#contact" class="btn btn-light">CREATE WITH US ↗</a>
+    </div>
+</section>
+
+
+<!-- DESIGN PROCESS -->
+<section class="process section-padding" id="process">
+
+    <div class="section-heading reveal">
+        <div>
+            <p class="eyebrow">04 / BEHIND THE CREATION</p>
+            <h2>FROM IDEA TO ICON<span>.</span></h2>
+        </div>
+        <p>Every masterpiece begins with an idea.</p>
+    </div>
+
+    <div class="process-grid">
+
+        <article class="process-item reveal">
+            <span>01</span>
+            <i data-lucide="lightbulb"></i>
+            <h3>Inspiration</h3>
+            <p>Exploring culture, art, architecture and emerging trends.</p>
+        </article>
+
+        <article class="process-item reveal">
+            <span>02</span>
+            <i data-lucide="pencil-ruler"></i>
+            <h3>Concept Design</h3>
+            <p>Transforming creative ideas into visual concepts.</p>
+        </article>
+
+        <article class="process-item reveal">
+            <span>03</span>
+            <i data-lucide="palette"></i>
+            <h3>Material Study</h3>
+            <p>Experimenting with fabrics, textures and colors.</p>
+        </article>
+
+        <article class="process-item reveal">
+            <span>04</span>
+            <i data-lucide="scissors"></i>
+            <h3>Craftsmanship</h3>
+            <p>Bringing sketches to life through construction.</p>
+        </article>
+
+        <article class="process-item reveal">
+            <span>05</span>
+            <i data-lucide="camera"></i>
+            <h3>Final Vision</h3>
+            <p>Styling and presenting the completed creation.</p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- PORTFOLIO -->
+<section class="portfolio section-padding" id="portfolio">
+
+    <div class="section-heading reveal">
+        <div>
+            <p class="eyebrow">05 / CREATIVE ARCHIVE</p>
+            <h2>THE ART OF DESIGN<span>.</span></h2>
+        </div>
+    </div>
+
+    <div class="portfolio-grid">
+
+        <div class="portfolio-item reveal">
+            <img src="https://images.unsplash.com/photo-1548624149-f3d8e5c5f2a2?w=900"
+                 alt="Fashion editorial portrait and styling concept" loading="lazy">
+            <p>01 — EDITORIAL STUDY</p>
+        </div>
+
+        <div class="portfolio-item reveal">
+            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=900"
+                 alt="Creative design sketching workspace" loading="lazy">
+            <p>02 — CREATIVE PROCESS</p>
+        </div>
+
+        <div class="portfolio-item reveal">
+            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=900"
+                 alt="Fashion fabric and garment detail" loading="lazy">
+            <p>03 — MATERIAL EXPLORATION</p>
+        </div>
+
+        <div class="portfolio-item reveal">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=900"
+                 alt="Contemporary fashion campaign" loading="lazy">
+            <p>04 — VISUAL STORYTELLING</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section class="services section-padding" id="services">
+
+    <p class="eyebrow reveal">06 / WHAT WE CREATE</p>
+    <h2 class="reveal">OUR EXPERTISE<span>.</span></h2>
+
+    <div class="service-list">
+
+        <div class="service reveal">
+            <span>01</span>
+            <h3>Custom Fashion Design</h3>
+            <i data-lucide="arrow-up-right"></i>
+        </div>
+
+        <div class="service reveal">
+            <span>02</span>
+            <h3>Bespoke Couture</h3>
+            <i data-lucide="arrow-up-right"></i>
+        </div>
+
+        <div class="service reveal">
+            <span>03</span>
+            <h3>Creative Direction</h3>
+            <i data-lucide="arrow-up-right"></i>
+        </div>
+
+        <div class="service reveal">
+            <span>04</span>
+            <h3>Fashion Illustration</h3>
+            <i data-lucide="arrow-up-right"></i>
+        </div>
+
+        <div class="service reveal">
+            <span>05</span>
+            <h3>Collection Development</h3>
+            <i data-lucide="arrow-up-right"></i>
+        </div>
+
+        <div class="service reveal">
+            <span>06</span>
+            <h3>Brand Collaborations</h3>
+            <i data-lucide="arrow-up-right"></i>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact section-padding" id="contact">
+
+    <div class="contact-heading reveal">
+        <p class="eyebrow">07 / START A CONVERSATION</p>
+        <h2>HAVE A VISION?<br><span>LET'S CREATE IT.</span></h2>
+    </div>
+
+    <div class="contact-layout">
+
+        <div class="contact-details reveal">
+            <p>Have an idea, a project or a collaboration in mind?</p>
+            <p>We would love to hear your story.</p>
+
+            <div class="contact-info">
+                <span>EMAIL</span>
+                <a href="mailto:hello@elanstudio.com">hello@elanstudio.com</a>
+            </div>
+
+            <div class="contact-info">
+                <span>FOLLOW OUR JOURNEY</span>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
+                <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">PINTEREST ↗</a>
+            </div>
+        </div>
+
+        <form id="contactForm" class="contact-form reveal">
+
+            <label for="name">YOUR NAME</label>
+            <input type="text" id="name" placeholder="Full name" required>
+
+            <label for="email">EMAIL ADDRESS</label>
+            <input type="email" id="email" placeholder="Your email" required>
+
+            <label for="project">PROJECT TYPE</label>
+            <select id="project" required>
+                <option value="">Select project</option>
+                <option>Custom Fashion Design</option>
+                <option>Bespoke Couture</option>
+                <option>Creative Direction</option>
+                <option>Brand Collaboration</option>
+                <option>Other</option>
+            </select>
+
+            <label for="budget">BUDGET RANGE</label>
+            <select id="budget" required>
+                <option value="">Select budget</option>
+                <option>Below ₹25,000</option>
+                <option>₹25,000 – ₹50,000</option>
+                <option>₹50,000 – ₹1,00,000</option>
+                <option>₹1,00,000+</option>
+            </select>
+
+            <label for="message">TELL US ABOUT YOUR VISION</label>
+            <textarea id="message" rows="4" placeholder="Describe your project..." required></textarea>
+
+            <button type="submit" class="btn btn-dark">
+                SEND INQUIRY ↗
+            </button>
+
+            <p id="formMessage" role="status" aria-live="polite"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <h2>ÉLAN<span>.</span></h2>
+
+    <p>FASHION IS ART. MAKE IT PERSONAL.</p>
+
+    <div class="footer-bottom">
+        <span>© 2026 ÉLAN CREATIVE STUDIO</span>
+        <a href="#home">BACK TO TOP ↑</a>
+        <span>DESIGNED WITH INTENTION.</span>
+    </div>
+
+</footer>
+
+<script src="{% static 'script.js' %}"></script>
+
+</body>
+</html>
